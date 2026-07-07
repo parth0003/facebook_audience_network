@@ -3,7 +3,7 @@
 /// This library uses native API of [Facebook Audience Network](https://developers.facebook.com/docs/audience-network)
 /// to provide functionality for Flutter applications.
 ///
-/// Currently only Android platform is supported.
+/// Currently Android and iOS platforms are supported.
 library facebook_audience_network;
 
 import 'package:flutter/services.dart';
@@ -23,7 +23,7 @@ export 'ad/ad_rewarded.dart';
 /// Initialize the Facebook Audience Network by calling the static [init]
 /// function.
 class FacebookAudienceNetwork {
-  static const _channel = const MethodChannel(MAIN_CHANNEL);
+  static const _channel = MethodChannel(MAIN_CHANNEL);
 
   /// Initializes the Facebook Audience Network. [testingId] can be used to
   /// obtain test Ads.

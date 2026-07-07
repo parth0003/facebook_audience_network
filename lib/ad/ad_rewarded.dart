@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/services.dart';
 
 import 'package:facebook_audience_network/constants.dart';
@@ -27,7 +25,7 @@ enum RewardedVideoAdResult {
 class FacebookRewardedVideoAd {
   static void Function(RewardedVideoAdResult, dynamic)? _listener;
 
-  static const _channel = const MethodChannel(REWARDED_VIDEO_CHANNEL);
+  static const _channel = MethodChannel(REWARDED_VIDEO_CHANNEL);
 
   /// Loads a rewarded video Ad in background. Replace the default [placementId]
   /// with the one which you obtain by signing-up for Facebook Audience Network.
@@ -54,9 +52,6 @@ class FacebookRewardedVideoAd {
         "id": placementId,
       };
       
-      if(Platform.isIOS)
-        return false;
-
       final result = await _channel.invokeMethod(
         LOAD_REWARDED_VIDEO_METHOD,
         args,

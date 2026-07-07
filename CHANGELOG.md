@@ -1,3 +1,13 @@
+## 1.0.3
+- Added rewarded video ad support for iOS
+
+## 1.0.2
+- Bumped Audience Network SDK to v6.21.0 (Android) and v6.21 (iOS)
+- Updated minimum Android SDK to API 24 per [Meta Audience Network requirements](https://developers.facebook.com/documentation/audience-network/setting-up/platform-setup/android/get-started)
+- Updated iOS deployment target to 12.0 and Swift 5.0
+- Modernized Android Gradle setup for Flutter 3.x compatibility
+- Updated Dart SDK constraint to `^3.0.0` for Flutter 3.x / Dart 3 support
+
 ## 1.0.1
 - Support Android V2 embedding - PR by @anil-shrestha
 

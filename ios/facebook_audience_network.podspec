@@ -8,19 +8,16 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 Facebook Audience Network plugin for Flutter application
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/dreamsoftin/facebook_audience_network'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Dreamsoft Innovations Private Limited' => 'support@dreamsoftin.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  # s.dependency 'FBSDKCoreKit'
-  # s.dependency 'FacebookSDK'
-  s.dependency 'FBAudienceNetwork', '~> 6.3'
+  s.dependency 'FBAudienceNetwork', '~> 6.21'
 
   s.static_framework = true
-  s.swift_version = '4.0'
-  s.ios.deployment_target = '9.0'
+  s.swift_version = '5.0'
+  s.ios.deployment_target = '12.0'
 end
-

@@ -278,7 +278,7 @@ class _FacebookNativeAdState extends State<FacebookNativeAd>
   }
 
   String _getHexStringFromColor(Color color) =>
-      '#${color.value.toRadixString(16)}';
+      '#${color.toARGB32().toRadixString(16).padLeft(8, '0')}';
 
   void _onNativeAdViewCreated(int id) {
     final channel = MethodChannel('${NATIVE_AD_CHANNEL}_$id');

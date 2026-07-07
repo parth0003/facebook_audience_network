@@ -6,12 +6,15 @@ struct FANConstant{
     static let NATIVE_AD_CHANNEL = MAIN_CHANNEL + "/nativeAd";
     static let NATIVE_BANNER_AD_CHANNEL = MAIN_CHANNEL + "/nativeBannerAd";
     static let INTERSTITIAL_AD_CHANNEL = MAIN_CHANNEL + "/interstitialAd";
+    static let REWARDED_VIDEO_CHANNEL = MAIN_CHANNEL + "/rewardedAd";
     
     static let ERROR_METHOD = "error";
     static let LOADED_METHOD = "loaded";
     static let CLICKED_METHOD = "clicked";
     static let DISMISSED_METHOD = "dismissed"; //Add dismissed event constant
     static let LOGGING_IMPRESSION_METHOD = "logging_impression";
+    static let REWARDED_VIDEO_COMPLETE_METHOD = "rewarded_complete";
+    static let REWARDED_VIDEO_CLOSED_METHOD = "rewarded_closed";
     
     static let PLACEMENT_ID_ARG = "placement_id";
     static let INVALIDATED_ARG = "invalidated";
