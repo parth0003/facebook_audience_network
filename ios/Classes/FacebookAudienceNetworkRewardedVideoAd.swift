@@ -43,9 +43,12 @@ class FacebookAudienceNetworkRewardedVideoAdPlugin: NSObject, FBRewardedVideoAdD
             return false
         }
 
+        guard let rootViewController = UIApplication.shared.keyWindow?.rootViewController else {
+            return false
+        }
+
         let args = call.arguments as! NSDictionary
         let delay = args["delay"] as! Int
-        let rootViewController = UIApplication.shared.keyWindow?.rootViewController
 
         if delay > 0 {
             let time = DispatchTime.now() + .milliseconds(delay)
